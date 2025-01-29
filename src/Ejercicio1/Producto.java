@@ -1,5 +1,3 @@
-//Crea una clase llamada "Producto" con los atributos nombre y precio.
-
 
 
 package Ejercicio1;
