@@ -24,7 +24,7 @@ public class Venta {
 	public void getVenta() {
 		
 		for (Producto productos : venta) {
-			System.out.println(productos.getNombre() + ": " + productos.getPrecio() + "€");
+			System.out.println(productos.getNombre() + " ---> " + productos.getPrecio() + "€");
 		}
 
 	}

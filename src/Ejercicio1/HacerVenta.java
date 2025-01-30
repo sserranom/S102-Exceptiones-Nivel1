@@ -1,6 +1,6 @@
 package Ejercicio1;
 
-import java.util.List;
+//import java.util.List;
 
 public class HacerVenta {
 
@@ -26,7 +26,8 @@ public class HacerVenta {
 		
 		
 		
-		//Código para generar y capturar una exepcion de tipo IndexOutOfBoundsException
+		/*Codigo para genrar y capturar una exepcion de tipo IndexOutOfBoundsException, cuando intento eliminar un producto 
+		desde un indice que no existe*/
 		
 		System.out.println("\nCódigo para generar y capturar la excepcion de tipo IndexOutOfBoundsException \n");
 		
