@@ -8,23 +8,32 @@ public class Venta {
 	private List<Producto> venta;
 	private double precioTotal = 0;
 	
+	
 	public Venta() {
+		
 		this.venta = new ArrayList<Producto>();
 	}
 	
+	
 	public void addProducto(Producto producto) {
+		
 		venta.add(producto);
 		
 	}
 	
-	 public List<Producto> getProductos() {
+	
+	public List<Producto> getProductos() {
+		
 	        return venta;
-	    }
+	}
 	
 	public void getVenta() {
 		
+		int indice = 1;
 		for (Producto productos : venta) {
-			System.out.println(productos.getNombre() + " ---> " + productos.getPrecio() + "€");
+			
+			System.out.println(indice + " " + productos.getNombre() + " ---> " + productos.getPrecio() + "€");
+			indice++;
 		}
 
 	}
@@ -43,15 +52,17 @@ public class Venta {
 			}
 		}
 		
-		System.out.println("El precio total de la venta es: " + precioTotal);
+		System.out.println("El precio total de la venta es: " + precioTotal + "€");
 	}
 	
 	
 	public void removerProducto(List<Producto> productos, int item) {
 		
 		 if (item < 0 || item >= productos.size()) {
-	            throw new IndexOutOfBoundsException("No se puede eliminar el producto, el item " + item + " no existe");
+			 
+	            throw new IndexOutOfBoundsException("No se puede eliminar el producto, el item " + item + " no existe  IndexOutOfBoundsException ");
 	        }
+		 
 	        productos.remove(item);
 	        System.out.println("Se ha eliminado el producto ");
 	}
