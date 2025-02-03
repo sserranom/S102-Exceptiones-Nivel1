@@ -42,10 +42,10 @@ public class Venta {
 		
 		if(venta.isEmpty()) {
 			
-			throw new VendaBuidaException();
+			throw new VendaBuidaException("Para hacer una venta primero debes añadir productos.");
 			
 		}else {
-			
+			precioTotal = 0.0;
 			for(Producto productos : venta) {
 				
 				precioTotal += productos.getPrecio();
